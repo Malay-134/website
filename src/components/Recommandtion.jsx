@@ -110,7 +110,7 @@ const Container = styled.div`
         position: absolute;
         margin-top: 22px;
         margin-left: 20px;
-        border-top: 120px solid rgb(46, 222, 127); /* height: 10px; */
+        border-top: 120px solid rgb(46, 222, 127);
         width: 2px;
       }
     }
@@ -121,14 +121,46 @@ const Container = styled.div`
         position: absolute;
         margin-top: 22px;
         margin-left: 20px;
-        border-top: 95px solid rgb(47, 128, 222); /* height: 10px; */
+        border-top: 95px solid rgb(47, 128, 222);
         width: 2px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .recommendations {
+      .detail {
+        .text {
+          width: 91%;
+        }
+      }
+      .abby {
+        &::before {
+          border-top: 135px solid rgb(46, 222, 127);
+        }
+      }
+      .steve {
+        &::before {
+          border-top: 110px solid rgb(47, 128, 222);
+        }
       }
     }
   }
   @media only screen and (max-width: 950px) {
     width: 70%;
     margin-top: 5px;
+    .recommendations {
+      .abby {
+        &::before {
+          border-top: 110px solid rgb(46, 222, 127);
+        }
+      }
+      .steve {
+        &::before {
+          border-top: 95px solid rgb(47, 128, 222);
+        }
+      }
+    }
   }
   @media only screen and (max-width: 770px) {
     width: 85%;
@@ -177,14 +209,14 @@ const Container = styled.div`
       .abby {
         &::before {
           margin-top: 30px;
-          border-top: 310px solid rgb(46, 222, 127); /* height: 10px; */
+          border-top: 310px solid rgb(46, 222, 127);
           width: 3px;
         }
       }
       .steve {
         &::before {
           margin-top: 30px;
-          border-top: 220px solid rgb(47, 128, 222); /* height: 10px; */
+          border-top: 220px solid rgb(47, 128, 222);
           width: 3px;
         }
       }

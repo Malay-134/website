@@ -53,6 +53,18 @@ const Partner = styled.div`
       }
     }
   }
+  @media only screen and (max-width: 1024px) {
+    .logos {
+      margin-left: 10px;
+      overflow: hidden;
+      gap: 10px;
+      img {
+        height: 21px;
+        width: 102px;
+      }
+    }
+  }
+
   @media (max-width: 950px) {
     width: 70%;
     .logos {

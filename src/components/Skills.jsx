@@ -48,7 +48,7 @@ const Skills = () => {
             return (
               <div className="skill" key={index}>
                 <IoCheckmark className="mark" size={12} />
-                {skill}
+                <p>{skill}</p>
               </div>
             );
           })}
@@ -61,7 +61,7 @@ const Skills = () => {
             return (
               <div className="skill" key={index}>
                 <IoCheckmark className="mark" size={12} />
-                {skill}
+                <p>{skill}</p>
               </div>
             );
           })}
@@ -129,16 +129,47 @@ const Container = styled.div`
       }
     }
   }
+  @media only screen and (max-width: 1024px) {
+    .details {
+      .skills {
+        gap: 15px;
+        .skill {
+          margin-left: -20px;
+          width: 75px;
+          height: 15px;
+          padding: 7px 15px;
+          margin-top: 0px;
+          gap: 0;
+          border: 1px solid rgb(237, 237, 238);
+          p {
+            margin-left: 5px;
+            margin-top: 10px;
+            width: 200px;
+            font-size: 0.7rem;
+          }
+          .mark {
+            margin-left: 0;
+            height: 35px;
+            width: 35px;
+          }
+        }
+      }
+    }
+  }
   @media only screen and (max-width: 950px) {
     width: 70%;
     margin-top: 5px;
     .details {
       .skills {
-        gap: 3;
+        gap: 3px;
         .skill {
-          margin: 0px;
-          padding: 4;
-          width: 140px;
+          margin-left: -30px;
+          padding: 3px 1px;
+          width: 130px;
+          .mark {
+            height: 25px;
+            width: 25px;
+          }
         }
       }
     }
@@ -148,10 +179,10 @@ const Container = styled.div`
     margin-left: 100px;
     .details {
       .skills {
-        gap: 2;
+        gap: 5px;
         .skill {
-          margin: 0px;
-          padding: 3;
+          margin: 3px;
+          padding: 3px;
           width: 130px;
           font-size: 12px;
         }
@@ -193,9 +224,12 @@ const Container = styled.div`
           width: 185px;
           height: 40px;
           font-size: 17px;
+          p {
+            font-size: 16px;
+          }
           .mark {
-            width: 20px;
-            height: 20px;
+            width: 25px;
+            height: 25px;
           }
         }
       }
@@ -237,6 +271,10 @@ const Container = styled.div`
           height: 50px;
           font-size: 22px;
           font-weight: 500;
+          p {
+            font-size: 20px;
+            margin-top: 15px;
+          }
           .mark {
             width: 25px;
             height: 25px;

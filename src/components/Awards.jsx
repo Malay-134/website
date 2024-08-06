@@ -126,17 +126,44 @@ const Container = styled.div`
       }
     }
   }
+  @media only screen and (max-width: 1024px) {
+    .awards {
+      margin-left: 10px;
+      .award {
+        .title {
+          width: 220px;
+        }
+        .text {
+          width: 80%;
+          margin-left: 25px;
+        }
+        .date {
+          margin-left: -90px;
+        }
+      }
+    }
+  }
   @media only screen and (max-width: 950px) {
     width: 70%;
     margin-top: 5px;
     .awards {
-      margin-left: 110px;
+      margin-left: -60px;
       gap: 10px;
       .award {
         padding: 5px;
         width: 330px;
         margin-left: -20px;
         margin-top: 0;
+        h2 {
+          width: 250px;
+        }
+        .text {
+          width: 80%;
+          margin-left: 85px;
+        }
+        .date {
+          margin-left: -80px;
+        }
       }
     }
   }

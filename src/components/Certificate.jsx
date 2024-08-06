@@ -126,11 +126,25 @@ const Container = styled.div`
       }
     }
   }
+
+  @media only screen and (max-width: 1024px) {
+    .certificates {
+      margin-left: 180px;
+      .certificate {
+        margin-left: -40px;
+      }
+    }
+  }
+
   @media only screen and (max-width: 950px) {
     width: 70%;
     margin-top: 5px;
     .certificates {
       padding-left: 20px;
+      margin-left: 30px;
+      .certificate {
+        margin-left: 0px;
+      }
     }
   }
   @media only screen and (max-width: 770px) {

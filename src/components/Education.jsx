@@ -105,12 +105,33 @@ const Container = styled.div`
       gap: 5px;
     }
   }
+  @media only screen and (max-width: 1024px) {
+    .details {
+      .title {
+        margin-left: 20px;
+      }
+      .date {
+        margin-left: -70px;
+        height: 15px;
+        padding: 6px 15px;
+        margin-top: 10px;
+        border: 1px solid rgb(237, 237, 238);
+        gap: 5px;
+        font-size: 0.7rem;
+        .react_icon {
+          margin-left: 0;
+          height: 15px;
+          width: 15px;
+        }
+      }
+    }
+  }
   @media only screen and (max-width: 950px) {
     width: 70%;
     margin-top: 5px;
     .details {
       .title {
-        margin-left: 15px;
+        margin-left: -50px;
       }
     }
   }
@@ -118,6 +139,9 @@ const Container = styled.div`
     width: 85%;
     margin-left: 100px;
     .details {
+      .title{
+        margin-left: -70px;
+      }
       .date {
         padding: 10px 0px;
       }
@@ -146,6 +170,9 @@ const Container = styled.div`
       font-weight: 500;
     }
     .details {
+      .title{
+        margin-left: 40px;
+      }
       .date {
         width: 250px;
         height: 10px;
@@ -153,7 +180,7 @@ const Container = styled.div`
         gap: 10px;
         margin-bottom: 20px;
         padding: 20px 15px;
-        font-size: 17px;
+        font-size: 15px;
         .react_icon {
           width: 20px;
           height: 20px;

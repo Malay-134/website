@@ -94,7 +94,7 @@ const Experience = () => {
               </div>
               <div className="secondary_text date">
                 <FaCalendarAlt className="react_icon" size={11} />
-                {date}
+                <p>{date}</p>
               </div>
             </div>
             <div className="secondary_text location">
@@ -236,16 +236,51 @@ const Container = styled.div`
       border-radius: 5px;
     }
   }
+  @media only screen and (max-width: 1024px) {
+    .content {
+      .details {
+        .date {
+          margin-left: -40px;
+          width: 80px;
+          height: 15px;
+          padding: 6px 15px;
+          margin-top: 20px;
+          border: 1px solid rgb(237, 237, 238);
+          gap: 0px;
+          p {
+            margin-left: 5px;
+            margin-top: 10px;
+            width: 200px;
+            font-size: 0.6rem;
+          }
+          .react_icon {
+            margin-left: 0;
+            height: 20px;
+            width: 20px;
+          }
+        }
+      }
+    }
+  }
   @media only screen and (max-width: 950px) {
     width: 70%;
     margin-top: 5px;
     .content {
       .details {
         .date {
-          width: 160px;
+          width: 140px;
           height: 10px;
-          padding: 10px 0px;
+          padding: 10px 10px;
           font-size: 11px;
+          p {
+            font-size: 10px;
+            width: 100px;
+          }
+          .react_icon {
+            margin-left: 0;
+            height: 12px;
+            width: 12px;
+          }
         }
       }
     }
@@ -406,9 +441,14 @@ const Container = styled.div`
           margin-left: 40px;
           padding: 20px 15px;
           font-size: 23px;
+          p {
+            margin-top: 20px;
+            width: 200px;
+            font-size: 1.3rem;
+          }
           .react_icon {
-            width: 25px;
-            height: 25px;
+            width: 20px;
+            height: 20px;
           }
         }
       }

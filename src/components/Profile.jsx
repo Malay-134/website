@@ -84,6 +84,34 @@ const Profile_container = styled.div`
       }
     }
   }
+  @media only screen and (max-width: 1024px) {
+    .text_div {
+      width: 650px;
+      height: 370px;
+      .profile_image {
+        margin: 15px;
+        img {
+          border-radius: 10px;
+        }
+      }
+      h2 {
+        margin-top: 0;
+      }
+      p{
+        font-size: 0.8rem;
+      }
+      .location {
+        width: 90%;
+        margin-left: 18px;
+        font-size: 1.3rem;
+        p {
+          width: 200px;
+          font-size: 14px;
+          margin-left: 5px;
+        }
+      }
+    }
+  }
 
   @media only screen and (max-width: 950px) {
     width: 70%;
