@@ -131,7 +131,7 @@ const Container = styled.div`
     .certificates {
       margin-left: 180px;
       .certificate {
-        margin-left: -40px;
+        margin-left: -70px;
       }
     }
   }

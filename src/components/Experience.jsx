@@ -240,7 +240,7 @@ const Container = styled.div`
     .content {
       .details {
         .date {
-          margin-left: -40px;
+          margin-left: -60px;
           width: 80px;
           height: 15px;
           padding: 6px 15px;

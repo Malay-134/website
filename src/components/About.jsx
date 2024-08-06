@@ -88,6 +88,18 @@ const Container = styled.div`
       color: rgb(119, 119, 125);
     }
   }
+  @media only screen and (max-width: 1024px) {
+    h2 {
+      display: flex;
+      justify-content: center;
+      width: 70%;
+    }
+    p {
+      display: flex;
+      justify-content: center;
+      width: 70%;
+    }
+  }
   @media only screen and (max-width: 950px) {
     width: 70%;
     margin-top: 70px;

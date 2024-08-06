@@ -134,7 +134,7 @@ const Container = styled.div`
           width: 220px;
         }
         .text {
-          width: 80%;
+          width: 78%;
           margin-left: 25px;
         }
         .date {
